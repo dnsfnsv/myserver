@@ -5,20 +5,29 @@ namespace application\controllers;
 class WorkersController extends \application\core\Controller
 {
 
+    public function indexAction()
+    {
+        $workers = $this->model->getWorkers();
+        $vars    = [
+            'workers' => $workers,
+        ];
+        $this->view->render('Сотрудники', $vars);
+    }
+
     public function postmenAction()
     {
-        $result = $this->model->getPostmen();
-        $vars   = [
-            'postmen' => $result,
+        $postmen = $this->model->getPostmen();
+        $vars    = [
+            'postmen' => $postmen,
         ];
         $this->view->render('Почтальоны', $vars);
     }
 
     public function clerksAction()
     {
-        $result = $this->model->getClerks();
+        $clerks = $this->model->getClerks();
         $vars   = [
-            'clerks' => $result,
+            'clerks' => $clerks,
         ];
         $this->view->render('Офисные сотрудники', $vars);
     }

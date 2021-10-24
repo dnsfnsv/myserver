@@ -2,7 +2,8 @@
 
 namespace application\models;
 
-class Clients extends \application\core\Model{
+class Clients extends \application\core\Model
+{
 
     public function getClients()
     {

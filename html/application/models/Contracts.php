@@ -2,7 +2,8 @@
 
 namespace application\models;
 
-class Contracts extends \application\core\Model{
+class Contracts extends \application\core\Model
+{
 
     public function getContracts()
     {

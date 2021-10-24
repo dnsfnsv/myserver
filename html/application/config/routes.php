@@ -7,6 +7,11 @@ return [
         'action'     => 'index',
     ],
 
+    'workers' => [
+        'controller' => 'workers',
+        'action'     => 'index',
+    ],
+
     'workers/postmen' => [
         'controller' => 'workers',
         'action'     => 'postmen',

@@ -7,9 +7,9 @@ class ContractsController extends \application\core\Controller
 
     public function indexAction()
     {
-        $result = $this->model->getContracts();
-        $vars   = [
-            'contracts' => $result,
+        $contracts = $this->model->getContracts();
+        $vars      = [
+            'contracts' => $contracts,
         ];
         $this->view->render('Договоры', $vars);
     }

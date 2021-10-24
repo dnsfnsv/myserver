@@ -7,9 +7,9 @@ class ClientsController extends \application\core\Controller
 
     public function indexAction()
     {
-        $result = $this->model->getClients();
-        $vars   = [
-            'clients' => $result,
+        $clients = $this->model->getClients();
+        $vars    = [
+            'clients' => $clients,
         ];
         $this->view->render('Клиенты', $vars);
     }

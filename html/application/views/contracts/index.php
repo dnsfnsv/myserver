@@ -1,4 +1,3 @@
-<h1><?= $title ?></h1>
 <?php
 foreach ($contracts as $item): ?>
     <p><b>Номер: </b><?= $item['id']; ?><p>
